@@ -70,7 +70,6 @@
                             <asp:Label ID="lblProductId" runat="server" Text='<%#Eval("ProductId") %>' Visible="false"></asp:Label>
                         <td class="auto-style1"> <%#Eval("Price", "{0:###,###,###}") %> VNĐ</td>
                         <td class="auto-style2">
-                             <%--<input type="text" name="quantity" id="quantity" value="<%#Eval("Quantity") %>" />--%>
                             <asp:TextBox ID="txtQuantity" runat="server" Text='<%#Eval("Quantity") %>'/>
                         </td>
                         <td class="auto-style3">

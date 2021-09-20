@@ -44,7 +44,7 @@
         </asp:ScriptManager>
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Thế giới di động</a>
+                <a class="navbar-brand" href="/Home">Thế giới di động</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -89,7 +89,7 @@
                    
                 <!--FOOTER -->
                 <footer class="py-5 bg-dark">
-                    <div class="container"><p class="m-0 text-center text-white">Copyright &copy;  Website Bán hàng 2021</p></div>
+                    <div class="container"><p class="m-0 text-center text-white">Copyright &copy;  Website bán hàng siêu cấp vũ trụ 2021</p></div>
                 </footer>
             <hr />
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>

@@ -34,7 +34,10 @@ namespace BusinessLogic
         {
             dal.DeleteOrder(id);
         }
-
+        public List<OderDetail> GetProductListByOrderId(int OrderId)
+        {
+            return dal.GetProductListByOrderId(OrderId);
+        }
     }
 }
 

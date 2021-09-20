@@ -33,10 +33,20 @@ namespace DataAccessLayer
         //[DELETE]
         public void DeleteOrder(int id)
         {
+            var orderDetail = db.OderDetails.Where(x => x.OrderId.Equals(id)).ToList();
+            foreach(var item in orderDetail)
+            {
+                db.OderDetails.Remove(item);
+                db.SaveChanges();
+            }
             var product = db.Orders.Find(id);
             db.Orders.Remove(product);
             db.SaveChanges();
         }
-
+        public List<OderDetail> GetProductListByOrderId(int OrderId)
+        {
+            var orderDetails = db.OderDetails.Where(x => x.OrderId.Equals(OrderId)).ToList();
+            return orderDetails;
+        }
     }
  }

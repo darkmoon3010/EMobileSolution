@@ -27,9 +27,13 @@ namespace EMobileSolution
             cmd.Parameters.AddWithValue("@username", usernameTxt.Text);
             cmd.Parameters.AddWithValue("@password", passwordTxt.Text);
             SqlDataReader rd = cmd.ExecuteReader();
-            Session["Username"] = usernameTxt.Text.Trim();
-            Session["Status"] = "IsLogin";
-            Response.Redirect("Product.aspx");   
+            if (rd.HasRows)
+            {
+                Session["Username"] = usernameTxt.Text.Trim();
+                Session["Status"] = "IsLogin";
+                Response.Redirect("Product.aspx");
+            }
+           
         }
     }
 }

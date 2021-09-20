@@ -18,7 +18,7 @@
     </div>
     <div style="margin: 10px 0 10px 0"">
 
-     <asp:Button class="button" ID="btnAddNew" runat="server" Text="Thêm mới" OnClick="btnAddNew_Click" />
+     <asp:Button CssClass="btn btn-primary" ID="btnAddNew" runat="server" Text="Thêm mới" OnClick="btnAddNew_Click" />
     </div>
     <div class="main-data" id="divGridView" runat="server">
         <asp:GridView ID="grvListCategory" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="183px" AutoGenerateColumns="False" Width="295px" OnRowCommand="grvListCategory_RowCommand" >
@@ -31,12 +31,12 @@
                 <asp:HyperLinkField DataNavigateUrlFields="CategoryId" DataTextField="Name" HeaderText="Tên Mục" DataNavigateUrlFormatString="~/Category.aspx?id={0}" NavigateUrl="~/Category.aspx" />
                 <asp:TemplateField HeaderText="Sửa">
                     <ItemTemplate>
-                        <asp:ImageButton ID="btnEdit" runat="server" CommandArgument='<%# Eval("CategoryId") %>' CommandName="_edit" Height="25px" ImageUrl="~/images/icon/PinClipart.com_microsoft-clipart-online_1646319.png" Width="20px" />
+                        <asp:ImageButton ID="btnEdit" runat="server" CommandArgument='<%# Eval("CategoryId") %>' CommandName="_edit" Height="25px" ImageUrl="~/images/icon/edit.png" Width="25px" />
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Xoá">
                     <ItemTemplate>
-                        <asp:ImageButton ID="btnDelete" runat="server" CommandArgument='<%# Eval("CategoryId") %>' CommandName="_delete" Height="23px" ImageUrl="~/images/icon/PinClipart.com_trash-clipart_5787306.png" Width="20px" />
+                        <asp:ImageButton ID="btnDelete" runat="server" CommandArgument='<%# Eval("CategoryId") %>' CommandName="_delete" Height="23px" ImageUrl="~/images/icon/trash.png" Width="25px" />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
@@ -65,8 +65,8 @@
             <tr>
                 <td style="width: 211px">&nbsp;</td>
                 <td class="auto-style2">
-                    <asp:Button ID="btnAdd" runat="server" Text="Thêm" Width="50px" OnClick="btnAdd_Click" style="height: 26px" />
-                    <asp:Button ID="btnCancel" runat="server" Text="Huỷ" Width="50px" OnClick="btnCancel_Click" />
+                    <asp:Button  CssClass="btn btn-primary" ID="btnAdd" runat="server" Text="Thêm" OnClick="btnAdd_Click" />
+                    <asp:Button  CssClass="btn bg-danger" ID="btnCancel" runat="server" Text="Huỷ"  OnClick="btnCancel_Click" />
                 </td>
             </tr>
         </table>
@@ -84,7 +84,7 @@
                     <tr>
                     <td style="width: 172px">&nbsp;</td>
                         <td style="width: 462px">      
-                            <asp:Button ID="btnGoBack" runat="server" Text="Trở về" OnClick="btnGoBack_Click"/>
+                            <asp:Button CssClass="btn bg-danger" ID="btnGoBack" runat="server" Text="Trở về" OnClick="btnGoBack_Click"/>
                         </td>
                     </tr>
             </table>

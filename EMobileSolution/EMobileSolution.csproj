@@ -139,8 +139,11 @@
     <Content Include="HomeProductDetail.aspx" />
     <Content Include="HomeProductsList.aspx" />
     <Content Include="HomeShoppingCart.aspx" />
+    <Content Include="images\icon\edit.png" />
     <Content Include="images\icon\PinClipart.com_microsoft-clipart-online_1646319.png" />
     <Content Include="images\icon\PinClipart.com_trash-clipart_5787306.png" />
+    <Content Include="images\icon\trash.png" />
+    <Content Include="images\icon\user.png" />
     <Content Include="images\Products\chup-tai-mozard-ip-360-600x600.jpg" />
     <Content Include="images\Products\iphone 12.PNG" />
     <Content Include="images\Products\iphone-7-gold.jpg" />
@@ -214,7 +217,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Database\RunData.cs" />
+    <Compile Include="Database\Rundata.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
